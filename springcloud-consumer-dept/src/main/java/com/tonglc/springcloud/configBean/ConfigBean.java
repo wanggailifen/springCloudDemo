@@ -21,7 +21,7 @@ public class ConfigBean //boot -->spring   applicationContext.xml --- @Configura
     @Bean
     public IRule myRule()
     {
-        //return new RoundRobinRule()1;
+        //return new RoundRobinRule()123;
         //return new RandomRule();//达到的目的，用我们重新选择的随机算法替代默认的轮询。
         return new RetryRule();
     }
