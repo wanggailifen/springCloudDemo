@@ -12,8 +12,9 @@ import java.util.List;
 @RestController
 public class DeptController_Consumer {
 
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
-//    private static final String REST_URL_PREFIX = "http://MICROSERVICECLOUD-DEPT";
+//    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    //按名称访问微服务
+    private static final String REST_URL_PREFIX = "http://springcloud-dept";
 
     /**
      * 使用 使用restTemplate访问restful接口非常的简单粗暴无脑。 (url, requestMap,
