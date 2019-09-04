@@ -1,6 +1,6 @@
 package com.tonglc.springcloud.controller;
 
-import com.tonglc.demo.entity.Dept;
+import com.tonglc.springcloud.entity.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

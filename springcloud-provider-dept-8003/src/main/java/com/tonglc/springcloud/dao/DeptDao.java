@@ -1,6 +1,6 @@
 package com.tonglc.springcloud.dao;
 
-import com.tonglc.demo.entity.Dept;
+import com.tonglc.springcloud.entity.Dept;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.tonglc.springcloud.service;
 
-import com.tonglc.demo.entity.Dept;
+import com.tonglc.springcloud.entity.Dept;
 
 import java.util.List;
 

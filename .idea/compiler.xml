@@ -7,15 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springcloud-api" />
-        <module name="springcloud-provider-dept-8002" />
-        <module name="springcloud-consumer-dept-80" />
-        <module name="springcloud-eureka-7003" />
-        <module name="springcloud-consume-rdept-feign" />
         <module name="springcloud-provider-dept-8003" />
+        <module name="springcloud-consumer-dept-80" />
         <module name="springcloud-eureka-7002" />
+        <module name="springcloud-consumer-dept-feign" />
+        <module name="springcloud-consume-rdept-feign" />
+        <module name="springcloud-eureka-7003" />
+        <module name="springcloud-provider-dept-8002" />
         <module name="springcloud-provider-dept-8001" />
         <module name="springcloud-eureka-7001" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springcloud-consumer-dept-feign2" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
