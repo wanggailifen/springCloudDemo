@@ -1,0 +1,57 @@
+server: 
+  port: 3344 
+  
+spring:
+  application:
+    name:  springcloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wanggailifen/spring-cloud-config-test.git
+          ignoreLocalSshSettings: true
+          force-pull: true
+          privateKey: |   #这个地方复制你的RSA密码，记得这里有个| 别忘了
+                        -----BEGIN OPENSSH PRIVATE KEY-----
+                        b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
+                        NhAAAAAwEAAQAAAYEAxdWSBanIWEgcyYIp/rDQXz/EHEG+vr59zEONyKvBiZorj/sx7h9i
+                        +kN5Pd+0AbWWpdN+ipP+mVZacKC6OFEiBOz/wVNSdKra4FqfiRTMegXWGHzBDMxvkcNkkO
+                        QW32Y9QC/ZO4K3yLQAfgYVw5RuvqOPsDQyeAgeSP3y4xb8BdZZHPlfFw11koZtiPIh1XaQ
+                        IMP6qGDd4EKCm3CWnXP+4ddWesri3emeuXbo0iHkhYVUzsKFQE0x59irKpjolrMeGHCJjy
+                        WK3b1IMBuVO2F76yMLS90Q2nWBN9IoVXib18fudyD4tJiYusy6y2saJ5dbKVMis1487IGb
+                        O7/oRS3LGoy1Tyh6ifCqjbwmUAG2s6IE3L8T/UFAidHWk38g3F82lFwvTvwuRBS7d4uave
+                        MrZbuxTxndv704eqgwPZ4zfBcs9bIh1tvXXz5o1N9Lvikgd7AopX2sh4zK/UwhicO2LOnU
+                        qdLj2TNEA8byOBUhtrE0U6jq36rn6jpA/9FwqQBpAAAFkGB+qSJgfqkiAAAAB3NzaC1yc2
+                        EAAAGBAMXVkgWpyFhIHMmCKf6w0F8/xBxBvr6+fcxDjcirwYmaK4/7Me4fYvpDeT3ftAG1
+                        lqXTfoqT/plWWnCgujhRIgTs/8FTUnSq2uBan4kUzHoF1hh8wQzMb5HDZJDkFt9mPUAv2T
+                        uCt8i0AH4GFcOUbr6jj7A0MngIHkj98uMW/AXWWRz5XxcNdZKGbYjyIdV2kCDD+qhg3eBC
+                        gptwlp1z/uHXVnrK4t3pnrl26NIh5IWFVM7ChUBNMefYqyqY6JazHhhwiY8lit29SDAblT
+                        the+sjC0vdENp1gTfSKFV4m9fH7ncg+LSYmLrMustrGieXWylTIrNePOyBmzu/6EUtyxqM
+                        tU8oeonwqo28JlABtrOiBNy/E/1BQInR1pN/INxfNpRcL078LkQUu3eLmr3jK2W7sU8Z3b
+                        +9OHqoMD2eM3wXLPWyIdbb118+aNTfS74pIHewKKV9rIeMyv1MIYnDtizp1KnS49kzRAPG
+                        8jgVIbaxNFOo6t+q5+o6QP/RcKkAaQAAAAMBAAEAAAGBAIg9zWMDCsrpVpHbhyo0ADwoQN
+                        ko2cColR+vwhvZVN57gtaUKk2P5eztvLhEr8WhlY67uOCcjPByjLQVrEkObrwvru4ngJiB
+                        9VwebNHNtgeur0OL3rL+szMR+dbijXHqCfKDQTn/iqu4csJXVHOtbBrzrwes2rjY9mpUIQ
+                        oNESC//fy7K6ZHiZmP5C00euJz1UwLSzrcAtDnXOTJQ6BJetVzI8ZKpLQoqDuXTT0xRBxD
+                        tyTwxy2CPAUrrK0YQs1Nqg0fzNPyDQxzekVx0fsuFl9SruyGbwgioWpzgfnibB82EJCgZM
+                        O8p9H4ftrgFmcBeW+4Lv0yAKHsi5GB32tJebEGKIWyuXVvl9vsUqoTM3iKkDA3FOQLg9Xf
+                        TXMa/Smbg+nBN/I7Q4mZd4kE8Z0ETAfRiJs6/Idm7D9tApi1dcG7yaPp2NYlkdZsvU6uL3
+                        UL+7+dBXFemldkF//gJ5bJivyYLVYPMsFRwwBSEmLagNNJzLxf0IkdSJHPqf9s+rjHtQAA
+                        AMEAk2sGDB8suAR+gQJlhW+f0We+5BMDMD+lmsVpOuIfyfVPERibaeh8WTtaaYbRwOso79
+                        iOUOOzm3Z/wLvZZT0F5gJohCZVBG9cE5MvxLr7vlwIGVzdZPax4pyTtHZZ97eH93c9zjwX
+                        QogDHIlfrCwolFCD8hlTFSg4i1HS06EVGqBRH/6fC5eUfzKZrH6zuIgLc+lcOU1UYhDwhT
+                        Gfi6vFpeNtrv4jRkwVbXwW8ke96DpoVFXTeP7H3P1p6FdJzEMoAAAAwQDmz/opiBo1/io2
+                        DC24YZBZKSikTlXZn4Ffv8eaCe8ADh1UMvDjzAQZrA7VG4JWgmdnbSNfdJ6f1yE7dw9Auq
+                        9hhtvwF1JhOu+fq3YXs21CSKXDWSE5ylsJPhuZHicg40lgtMo4QroOJA8hB+FrvONxgZ+1
+                        bt5VJjHsBxoWl6iUUq56pADHPTKBwSuE7n4eA/7PXjCwduMnwPZU8+kb8IrImnPdsNw0Z/
+                        5U7ge+LEITf9yUMWi+QMI3B+XSI8xVwesAAADBANtsTw3FgJdRLQZ/pck1d7QSKSEmGuA+
+                        7jnXtt3nva9viTuQZ3sei5iIViKX8H0PtWiH1JYPmZHAW1lBSBItQZZGuUjzM5TvCLQEAI
+                        1PHKbGT9TDlUfQxC0jq4lEu4Rhl/cY+DLM3YJAvAY3nJvb+0zeGqvcW6A6ibYyT0/hrUQW
+                        8pc8uiEGcDSJOemLbiPDom2pDt1YWnkNPUqcpABNE3o1jxpwcrJL4sQveWWsEfqQBwP9F9
+                        F77O1aBzDWeYTd+wAAABMxODIwMjcyOTMxOEAxNjMuY29tAQIDBAUG
+                        -----END OPENSSH PRIVATE KEY-----
+
+
+
+
+
